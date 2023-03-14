@@ -1,0 +1,56 @@
+/* Let's style our h1 & h2 headers
+Make the text centered
+Give it a margin of 10px
+Font size should be twice the normal size */
+h1, h2 {
+	text-align: center;
+	margin: 10px;
+	font-size: 200%;
+}
+
+	/* style the grid container
+	Dislay should be grid
+	Give it 3 columns of equal size
+	Grid gap of 10px
+	*/
+.grid {
+	margin: 0px auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 10px;
+/* add a background-color:  of #2196f3
+Add  a background image that links to the image in your folder */
+	background-color: #2196f3;
+	background-image: url("/images/background.jpg"); 
+	/* hit backsplash '/' to get folder options */
+	padding: 10px;
+	width: 620px;
+/* Add a solid black 3px border and round the corners */
+	border: 3px solid #000000;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 30px;
+}
+
+/* Style the divs inside of the grid 
+Give them a background of #e5e5e5 
+Add 20px of padding & font-size of 30px  */
+.grid div {
+	background-color: #e5e5e5;
+	text-align: center;
+	font-size: 30px;
+	padding: 20px;
+}
+
+
+/* Now try and style the individual boxes using grid-column */
+
+
+	/* Play with: */
+.item2  {
+	/* start line 3, end at line 4 */
+	grid-column: 3/4;
+}
+.item3 {
+	grid-column: 2 / span 1;
+}
